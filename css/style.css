@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&family=Reem+Kufi:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+
+/*ANIMATION*/
+/*.cap_nav_lista_li:hover{
+    animation: lista 1s ease-in;
+}
+@keyframes lista{
+    0%{
+        transform: scale(1.10);
+    }
+    15%{
+        transform: scale(1.15);
+        
+    }
+    25%{
+        transform: scale(1.20);
+    }
+    35%{
+        transform: scale(1.25);
+    }
+    50%{
+        transform: scale(1.30);
+    }
+    60%{
+        transform: scale(1.35);
+    }
+    75%{
+        transform: scale(1.40);
+    }
+    85%{
+        transform: scale(1.45);
+    }
+    100%{
+        transform: scale(1.50);
+    }
+}*/
+/*ANIMATION*/
+
+
+/*GRID PARA ORGANIZAR LA FORMA*/
+.grid_container{ /*GRID DEL INDEX*/
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 200px 1300px 150px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+.grid_container_dos{ /*GRID DE PRODUCTOS Y PLANTAS*/
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 200px 1300px 150px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+.grid_container_tres{ /*GRID PARA CONTACTOS*/
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 200px 1300px 150px;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+/*GRID AREAS*/
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+
+
+/*-----HEADER-----*/
+.cap{
+    background-color: rgba(36, 105, 95, 0.349); 
+    width: 100% ;
+    height: 200px;
+    
+}
+.cap_titulo{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.cap_nav{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cap_logo{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.cap_nav_lista{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.cap_nav_lista_li{
+    margin: 10px;
+    background-color: rgb(0, 0, 0);
+}
+.cap_nav_lista_li a{
+text-decoration: none;
+font-size: 15px;
+color: rgb(255, 255, 255);
+padding: 10px;
+}
+/*-----HEADER-----*/
+
+
+/*-----MAIN------*/
+.main_banner{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.main_banner_titulo{
+    background-color: black;
+    color: white;
+    width: 300px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.main_banner_img{
+    width: 400px;
+    height: 500px;
+    border: 5px solid seashell;   
+}
+.main_banner_contacto{
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.main_banner_p {
+    background-color: black;
+    color: white;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+}
+
+
+.producto_dos{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+.producto_macetas_oferta{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/fondo-seg.jpg);
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+}
+.producto{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/fondo-seg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.producto_mapa{
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/fondo-seg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.producto_titulo{
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.producto_div{
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+}
+/*.producto_div_div:hover{
+    transform: scale(1.1);
+}*/
+.producto_div_div{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /*transition-duration: 2s;*/
+}
+.producto_div_div h3{
+    background-color: black;
+    color: white;
+}
+.producto_div_div img{
+    width: 300px;
+    height: 300px;
+}
+.producto_div_div a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+
+.map_doc{
+    width: 500px;
+    height: 500px;
+}
+.contacto_mapa{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+/*-----MAIN-----*/
+
+/*-----FOOTER-----*/
+.pie{
+    width: 100%;
+    height: 150px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pie div{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.pie div img{
+    width: 50px;
+    height: 50px;
+}
+/*-----FOOTER-----*/
+
+
+@media screen and (max-width:1030px){
+    .main_banner{
+        flex-direction: column;
+        height: 750px;
+    }
+    .producto_div{
+        height: 1300px;
+        flex-direction: column;
+    }
+    .producto_dos{
+        flex-direction: column;
+    }
+    .producto{
+        height: 1400px;
+    }
+    .producto_dos{
+        height: 1400px;
+    }
+    .producto_macetas_oferta{
+        height: 1400px;
+    }
+    .grid_container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 2100px 150px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+    .grid_container_dos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 2800px 150px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+    .grid_container_tres{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 1400px 150px;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+}
+
+@media screen and (max-width:610px){
+    .main_banner_contacto{
+        width: 500px;
+    }
+    .main_banner_p{
+        width: 500px;
+    }
+    .cap{
+        height: 350px;
+    }
+    .cap_nav{
+        flex-direction: column;
+        justify-content: unset;
+    }
+    .cap_nav_lista{
+        flex-direction: column;
+        align-items: center;
+    }
+    .map_doc{
+        width: 400px;
+        height: 400px;
+    }
+    .grid_container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 2100px 150px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+    .grid_container_dos{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 2800px 150px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+    .grid_container_tres{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 350px 1400px 150px;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer"
+        ;
+    }
+}
