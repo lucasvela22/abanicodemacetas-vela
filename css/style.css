@@ -10,7 +10,7 @@ body{
 
 
 /*ANIMATION*/
-/*.cap_nav_lista_li:hover{
+.cap_nav_lista_li:hover{
     animation: lista 1s ease-in;
 }
 @keyframes lista{
@@ -42,7 +42,7 @@ body{
     100%{
         transform: scale(1.50);
     }
-}*/
+}
 /*ANIMATION*/
 
 
@@ -215,9 +215,9 @@ padding: 10px;
     justify-content: space-evenly;
     align-items:center;
 }
-/*.producto_div_div:hover{
+.producto_div_div:hover{
     transform: scale(1.1);
-}*/
+}
 .producto_div_div{
     width: 300px;
     height: 400px;
@@ -226,7 +226,7 @@ padding: 10px;
     flex-direction: column;
     justify-content: space-between;
 
-    /*transition-duration: 2s;*/
+    transition-duration: 2s;
 }
 .producto_div_div h3{
     background-color: black;
