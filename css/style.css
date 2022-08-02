@@ -9,6 +9,7 @@ body{
 }
 
 
+
 /*ANIMATION*/
 .cap_nav_lista_li:hover{
     animation: lista 1s ease-in;
@@ -117,7 +118,7 @@ footer{
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 80%;
 }
 .cap_nav_lista_li{
     margin: 10px;
@@ -215,9 +216,6 @@ padding: 10px;
     justify-content: space-evenly;
     align-items:center;
 }
-.producto_div_div:hover{
-    transform: scale(1.1);
-}
 .producto_div_div{
     width: 300px;
     height: 400px;
@@ -225,8 +223,6 @@ padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    transition-duration: 2s;
 }
 .producto_div_div h3{
     background-color: black;
