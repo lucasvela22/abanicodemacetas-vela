@@ -119,7 +119,7 @@ footer{
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 80%;
 }
 .cap_nav_lista_li{
     margin: 10px;
