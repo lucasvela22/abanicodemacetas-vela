@@ -102,6 +102,7 @@ footer{
     text-align: center;
     background-color: black;
     color: white;
+    margin-bottom: 0%;
 }
 .cap_nav{
     height: 150px;
@@ -118,7 +119,7 @@ footer{
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    width: 100%;
 }
 .cap_nav_lista_li{
     margin: 10px;
