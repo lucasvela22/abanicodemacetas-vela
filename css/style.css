@@ -7,8 +7,9 @@
 body{
     font-family: 'Reem Kufi', sans-serif;
 }
-.h{
-    height:650px;
+
+.carousel{
+    height: 650px;
 }
 
 /*ANIMATION*/
@@ -48,8 +49,8 @@ body{
 /*ANIMATION*/
 
 
-/*GRID PARA ORGANIZAR LA FORMA
-.grid_container{ /*GRID DEL INDEX
+/*GRID PARA ORGANIZAR LA FORMA*/
+.grid_container{ /*GRID DEL INDEX*/
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 200px 1300px 150px;
@@ -59,7 +60,7 @@ body{
     "footer footer footer"
     ;
 }
-.grid_container_dos{ /*GRID DE PRODUCTOS Y PLANTAS
+.grid_container_dos{ /*GRID DE PRODUCTOS Y PLANTAS*/
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: 200px 1300px 150px;
@@ -68,7 +69,7 @@ body{
     "main main main"
     "footer footer footer"
     ;
-}*/
+}
 .grid_container_tres{ /*GRID PARA CONTACTOS*/
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
@@ -255,6 +256,7 @@ padding: 10px;
 }
 /*-----MAIN-----*/
 
+
 /*-----FOOTER-----*/
 .pie{
     width: 100%;
@@ -279,6 +281,9 @@ padding: 10px;
 
 
 @media screen and (max-width:1030px){
+    .carousel{
+        height: 700px;
+    }
     .main_banner{
         flex-direction: column;
         height: 750px;
@@ -299,7 +304,7 @@ padding: 10px;
     .producto_macetas_oferta{
         height: 1400px;
     }
-    /*.grid_container{
+    .grid_container{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 200px 2100px 150px;
@@ -308,7 +313,7 @@ padding: 10px;
         "main main"
         "footer footer"
         ;
-    }*/
+    }
     .grid_container_dos{
         display: grid;
         grid-template-columns: 50% 50%;
@@ -353,7 +358,7 @@ padding: 10px;
         width: 400px;
         height: 400px;
     }
-    /*.grid_container{
+    .grid_container{
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 350px 2100px 150px;
@@ -362,7 +367,7 @@ padding: 10px;
         "main"
         "footer"
         ;
-    }*/
+    }
     .grid_container_dos{
         display: grid;
         grid-template-columns: 100%;
